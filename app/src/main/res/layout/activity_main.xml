@@ -1,0 +1,245 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<ScrollView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/background_main">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:padding="24dp">
+
+        <!-- ENCABEZADO -->
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:gravity="center"
+            android:paddingTop="30dp"
+            android:paddingBottom="35dp">
+
+            <TextView
+                android:layout_width="70dp"
+                android:layout_height="70dp"
+                android:gravity="center"
+                android:text="🏫"
+                android:textSize="38sp"
+                android:background="@drawable/background_card"/>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="18dp"
+                android:text="PROGRAMA ESCOLAR"
+                android:textColor="@color/azul_oscuro"
+                android:textSize="28sp"
+                android:textStyle="bold"/>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="6dp"
+                android:text="Escuela Nuevo Horizonte"
+                android:textColor="@color/gris_texto"
+                android:textSize="16sp"/>
+
+        </LinearLayout>
+
+
+        <!-- TÍTULO -->
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="¿Qué deseas consultar?"
+            android:textColor="@color/negro"
+            android:textSize="20sp"
+            android:textStyle="bold"
+            android:layout_marginBottom="16dp"/>
+
+
+        <!-- TARJETA PROGRAMA -->
+
+        <LinearLayout
+            android:id="@+id/btnPrograma"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:gravity="center_vertical"
+            android:padding="20dp"
+            android:background="@drawable/background_card"
+            android:clickable="true"
+            android:focusable="true"
+            android:elevation="3dp"
+            android:layout_marginBottom="16dp">
+
+            <TextView
+                android:layout_width="55dp"
+                android:layout_height="55dp"
+                android:gravity="center"
+                android:text="📅"
+                android:textSize="30sp"/>
+
+            <LinearLayout
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:orientation="vertical"
+                android:layout_marginStart="15dp">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Semana Cultural"
+                    android:textColor="@color/negro"
+                    android:textSize="18sp"
+                    android:textStyle="bold"/>
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="5dp"
+                    android:text="Consulta el programa de eventos"
+                    android:textColor="@color/gris_texto"
+                    android:textSize="14sp"/>
+
+            </LinearLayout>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="›"
+                android:textColor="@color/azul_principal"
+                android:textSize="30sp"/>
+
+        </LinearLayout>
+
+
+        <!-- TARJETA LECTURAS -->
+
+        <LinearLayout
+            android:id="@+id/btnFragmentos"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:gravity="center_vertical"
+            android:padding="20dp"
+            android:background="@drawable/background_card"
+            android:clickable="true"
+            android:focusable="true"
+            android:elevation="3dp">
+
+            <TextView
+                android:layout_width="55dp"
+                android:layout_height="55dp"
+                android:gravity="center"
+                android:text="📖"
+                android:textSize="30sp"/>
+
+            <LinearLayout
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:orientation="vertical"
+                android:layout_marginStart="15dp">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Lecturas"
+                    android:textColor="@color/negro"
+                    android:textSize="18sp"
+                    android:textStyle="bold"/>
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="5dp"
+                    android:text="Lee los fragmentos literarios"
+                    android:textColor="@color/gris_texto"
+                    android:textSize="14sp"/>
+
+            </LinearLayout>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="›"
+                android:textColor="@color/azul_principal"
+                android:textSize="30sp"/>
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/btnGestionar"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:gravity="center_vertical"
+            android:padding="20dp"
+            android:background="@drawable/background_card"
+            android:clickable="true"
+            android:focusable="true"
+            android:elevation="3dp"
+            android:layout_marginTop="16dp">
+
+            <TextView
+                android:layout_width="55dp"
+                android:layout_height="55dp"
+                android:gravity="center"
+                android:text="⚙️"
+                android:textSize="30sp"/>
+
+            <LinearLayout
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:orientation="vertical"
+                android:layout_marginStart="15dp">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Gestionar programa"
+                    android:textColor="@color/negro"
+                    android:textSize="18sp"
+                    android:textStyle="bold"/>
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="5dp"
+                    android:text="Administrar los eventos"
+                    android:textColor="@color/gris_texto"
+                    android:textSize="14sp"/>
+
+            </LinearLayout>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="›"
+                android:textColor="@color/azul_principal"
+                android:textSize="30sp"/>
+
+        </LinearLayout>
+
+
+        <!-- PIE -->
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="45dp"
+            android:gravity="center"
+            android:text="Una comunidad informada es una comunidad conectada."
+            android:textColor="@color/gris_texto"
+            android:textSize="13sp"/>
+
+    </LinearLayout>
+
+</ScrollView>
